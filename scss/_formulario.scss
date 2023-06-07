@@ -1,0 +1,35 @@
+.formulario {
+    grid-area: formulario;
+    background-color: $background-color_2;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 2fr, 1fr;
+    grid-template-areas: "mapa form";
+    padding: 20px;
+  }
+  .mapa {
+    grid-area: mapa;
+  }
+  .contForm {
+    grid-area: form;
+    padding: 30px;
+    background-color: $background-color_4;
+    margin: 5px;
+    border: 5px solid #e9c6c2;
+  }
+  .bloqueFormulario {
+    width: 100%;
+  }
+  .formControl {
+    background-color: $background-color_5;
+    border: 2px solid #aea9b0;
+    width: 100%;
+    padding: 5px;
+  }
+  .formularioControl12 {
+    background-color: $background-color_5;
+    border: 2px solid #aea9b0;
+    resize: none;
+    padding: 5px;
+    font-family: $font-family_2;
+  }

@@ -1,0 +1,104 @@
+.footer {
+    grid-area: footer;
+    background-color: $background-color_6;
+  }
+  footer {
+    box-sizing: border-box;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+    background-color: $background-color_7;
+    text-align: center;
+    h5 {
+      margin: 0;
+      padding: 10px 0;
+      font-size: 12px;
+      color: $color_5;
+    }
+  }
+  .redessociales {
+    margin-bottom: 20px;
+    h3 {
+      margin-top: 0;
+    }
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+    a {
+      img {
+        height: 30px;
+        width: 30px;
+      }
+    }
+    i {
+      font-size: 30px;
+      color: $color_4;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .contenedorGeneral {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "header"
+        "inicio"
+        "aside"
+        "galeria"
+        "formulario"
+        "footer";
+    }
+  }
+  @media only screen and (max-width: 480px) {
+    .navbar ul li {
+      margin: 0.5rem;
+    }
+    
+    .menuItem a {
+      font-size: 16px;
+    }
+    
+    .aside .texto {
+      width: 100%;
+      padding: 20px;
+      font-size: 16px;
+    }
+    
+    .imgGaleria {
+      width: 100%;
+    }
+    
+    .formulario {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "mapa"
+        "form";
+    }
+    
+    .contForm {
+      padding: 20px;
+    }
+    
+    .formControl,
+    .formularioControl12 {
+      font-size: 14px;
+    }
+    
+    .redessociales a img {
+      height: 20px;
+      width: 20px;
+    }
+    
+    .redessociales i {
+      font-size: 20px;
+    }
+    
+    footer h5 {
+      font-size: 10px;
+    }
+  }
+  

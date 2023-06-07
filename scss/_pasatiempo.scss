@@ -1,0 +1,49 @@
+.idea {
+    background-color: $background-color_4;
+  }
+  .referencia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $background-color_2;
+    margin: 15px auto;
+    padding: 15px 10px;
+    height: 250px;
+    border: 2px solid #f21b7f;
+    color: $color_4;
+    overflow: hidden;
+    .aciva {
+      margin-top: 20px;
+      color: $color_4;
+      height: 100px;
+    }
+  }
+  .pintura {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    width: 95%;
+    margin: auto;
+    grid-gap: 10px;
+    padding: 40px 0;
+    overflow: hidden;
+    > a {
+      display: block;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    }
+    img {
+      width: 100%;
+      vertical-align: top;
+      object-fit: cover;
+      transition: transform 0.5s;
+    }
+    a {
+      &:hover {
+        img {
+          filter: blur(2px);
+          transform: rotate(20deg) scale(1.3);
+        }
+      }
+    }
+  }

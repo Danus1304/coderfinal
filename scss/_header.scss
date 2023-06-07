@@ -1,0 +1,56 @@
+.header {
+    grid-area: header;
+    background-color: $background-color_1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 0 0 10px 10px;
+  }
+  .perfil {
+    width: 100px;
+    border-radius: 50%;
+  }
+  .navbar {
+    ul {
+      display: flex;
+      flex-direction: row;
+      list-style-type: none;
+      padding: 0;
+      overflow: auto;
+      li {
+        margin: 1rem;
+        border: 1px solid transparent;
+        transition: border-color 0.3s ease;
+        &:hover {
+          border-color: $border-color_1;
+          background-color: $background-color_2;
+        }
+      }
+    }
+  }
+  .menuItem {
+    a {
+      text-decoration: none;
+      color: $color_1;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
+  @media (max-width: 745px) {
+    .header {
+      flex-wrap: wrap;
+      height: 100%;
+      overflow: hidden;
+
+    }
+    
+    .navbar ul {
+      flex-wrap: nowrap;
+    }
+    
+    .navbar ul li {
+      margin: 0.5rem;
+    }
+  }
+

@@ -1,0 +1,12 @@
+.galeria {
+    grid-area: galeria;
+    background-color: $background-color_3;
+    display: flex;
+    flex-direction: row;
+  }
+  .imgGaleria {
+    width: 33.33%;
+    margin: 5px;
+    padding: 5px;
+    overflow: hidden;
+  }

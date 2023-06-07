@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: $background-color_1;
+  }
+  .contenedorGeneral {
+    width: 99%;
+    font-family: $font-family_1;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row: repeat(5, auto);
+    grid-template-areas: "header header header" "inicio aside aside" "inicio galeria galeria" "formulario formulario formulario" "footer footer footer";
+  }
+  .contendor {
+    padding: 1.5px;
+  }

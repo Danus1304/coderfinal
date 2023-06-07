@@ -1,0 +1,15 @@
+.aside {
+    grid-area: aside;
+    background-color: $background-color_2;
+    color: $color_2;
+    margin: 5px;
+    padding: 15px;
+    overflow: auto;
+  }
+  .texto {
+    margin: 10px auto;
+    padding: 40px;
+    height: 25px;
+    align-items: center;
+    font-size: 18px;
+  }

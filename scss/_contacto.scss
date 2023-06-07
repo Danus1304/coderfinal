@@ -1,0 +1,74 @@
+.crea {
+    width: 100%;
+    height: 100vh;
+    font-family: $font-family_4;
+    color: $color_8;
+  }
+  .left-form {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    float: left;
+    background: #eee url(../img/rosa.jpg) no-repeat center;
+    background-size: cover;
+  }
+  .rigth-form {
+    width: 50%;
+    height: 100%;
+    margin: 0;
+    float: left;
+    background-color: $background-color_2;
+    display: flex;
+    justify-content: center;
+    form {
+      height: 100%;
+      width: 55%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      > input {
+        width: 100%;
+        padding: 10px 0;
+        font-style: 1.2em;
+      }
+      input[type="submit"] {
+        width: 100%;
+        background-color: $background-color_4;
+        color: $color_7;
+        border: none;
+        font-size: 18px;
+        padding: 8px 30px;
+      }
+    }
+    h2 {
+      font-size: 2rem;
+      color: $color_8;
+      margin: 20px 0;
+      font-weight: bold;
+    }
+    label {
+      width: 100%;
+      font-weight: 700;
+      margin: 20px 0;
+    }
+  }
+  .check {
+    width: 100%;
+    margin: 20px 0;
+  }
+  
+  @media only screen and(max-width:768px) {
+    .left-form {
+      display: none;
+    }
+    .rigth-form {
+      width: 100%;
+    }
+    .rigth-form form {
+      width: 95%;
+      padding: 0 1em;
+    }
+  }
+  
+  
